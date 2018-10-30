@@ -85,14 +85,14 @@ include_once("scriptvalidation.php");
 
 
 <!-- Master List  -->
-      
+
                         <div class="card" >
                             <div class="card-title">
                                 <a class="btn btn-primary" href="addrecord"><i class="fa fa-plus"></i> ADD</a>
 
                             </div>
                             <div class="card-body">
-                                
+
                                 <div class="table-responsive">
                                     <table id="myTable" class="table table-bordered table-striped">
                                         <thead>
@@ -109,22 +109,22 @@ include_once("scriptvalidation.php");
                                         </thead>
                                         <tbody>
                                             <?php
-                                            
-                                                
+
+
                                                 $selectmasterlist = $conn->query("SELECT * FROM tblpersonal_information");
                                                 $i='1';
                                                 While($rowmasterlist = $selectmasterlist->fetch(PDO::FETCH_ASSOC)){
-                                                
+
                                             ?>
                                             <tr>
                                                 <td><?php echo $rowmasterlist['Surname']; ?></td>
                                                 <td><?php echo $rowmasterlist['First_Name']; ?></td>
                                                 <td><?php echo $rowmasterlist['Middle_Name']; ?></td>
-                                                <td><?php 
+                                                <td><?php
                                                     $selectedid = $rowmasterlist['ID_'];
                                                     $selecthighestdegree = $conn->query("SELECT * FROM tbleducational_background WHERE ID_ = '$selectedid' ORDER BY ID DESC ;");
                                                     While($rowselectdegree = $selecthighestdegree->fetch(PDO::FETCH_ASSOC)){
-                                                        
+
                                                         if($rowselectdegree['Level'] == "graduateschool" && $rowselectdegree['Name_of_School'] != "" && $rowselectdegree['Degree_Course'] != ""){
                                                             echo "Masters - ".$rowselectdegree['Degree_Course']; break;
                                                         }elseif($rowselectdegree['Level'] == "college" && $rowselectdegree['Name_of_School'] != "" && $rowselectdegree['Degree_Course'] != ""){
@@ -145,12 +145,12 @@ include_once("scriptvalidation.php");
                                                 <td><?php //echo $rowmasterlist['Career']; ?></td>
                                                 <td><?php echo $rowmasterlist['Received_Date']; ?></td>
                                                 <td>
-                                                    
-                                                   
 
 
 
-                                                  
+
+
+
 
                                                      <!-- Delete -->
                                                     <button class="btn btn-rounded btn-danger"  href="#<?php echo $i;?>" data-toggle="modal" data-target="#<?php echo $i;?>"><i class="fa fa-trash" aria-hidden="true"></i></button>
@@ -159,19 +159,19 @@ include_once("scriptvalidation.php");
                                                     <!-- Edit -->
                                                     <button class="btn btn-rounded btn-warning"  href="#viewrecord<?php echo $i;?>" data-toggle="modal" data-target="#viewrecord<?php echo $i;?>"><i class="fa fa-id-card" aria-hidden="true"></i></button>
 
-                                                  
 
-                                                  
+
+
 
 
                                                 </td>
                                             </tr>
-                                            <?php include('actions/actionpops.php'); include('actions/editrecord.php'); 
-                                            $i++; 
+                                            <?php include('actions/actionpops.php'); //include('actions/editrecord.php'); 
+                                            $i++;
                                         } ?>
                                         </tbody>
                                     </table>
-                             
+
                             </div>
                         </div>
                     </div>
@@ -204,7 +204,7 @@ include_once("scriptvalidation.php");
     <script src="../resources/js/scripts.js"></script>
     <!-- scripit init-->
 
-    
+
     <script src="../resources/js/lib/datatables/datatables.min.js"></script>
     <script src="../resources/js/lib/datatables/datatables-init.js"></script>
 
@@ -222,7 +222,7 @@ include_once("scriptvalidation.php");
                     <div class="modal-header">
                     </div>
                     <div class="modal-body">
-                        
+
                         <div style="text-align:center;"><font size="30px"><span class="fa fa-warning" style="color: red;"><h3>Are You Sure?</h3></span></font></div>
 
                     </div>
@@ -234,5 +234,3 @@ include_once("scriptvalidation.php");
           </div>
         </div>
       </div>
-
-      

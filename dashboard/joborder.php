@@ -85,14 +85,14 @@ include_once("scriptvalidation.php");
 
 
 <!-- Master List  -->
-      
+
                         <div class="card" >
                             <div class="card-title">
                                 <a class="btn btn-primary" href="addrecord"><i class="fa fa-plus"></i> ADD</a>
 
                             </div>
                             <div class="card-body">
-                                
+
                                 <div class="table-responsive">
                                     <table id="myTable" class="table table-bordered table-striped">
                                         <thead>
@@ -111,12 +111,12 @@ include_once("scriptvalidation.php");
                                         </thead>
                                         <tbody>
                                             <?php
-                                            
-                                                
+
+
                                                 $selectmasterlist = $conn->query("SELECT tblpersonal_information.Surname, tblpersonal_information.First_Name, tblpersonal_information.Middle_Name,tblwork_experience.Position_Title,tblwork_experience.Monthly_Salary,tblwork_experience.Department FROM tblpersonal_information JOIN tblwork_experience ON tblpersonal_information.ID_ = tblwork_experience.ID_ WHERE tblwork_experience.Status_of_Appointment ='Job Order'");
                                                 $i='1';
                                                 While($rowmasterlist = $selectmasterlist->fetch(PDO::FETCH_ASSOC)){
-                                                
+
                                             ?>
                                             <tr>
                                                 <td><?php echo $rowmasterlist['Surname']; ?></td>
@@ -129,12 +129,12 @@ include_once("scriptvalidation.php");
                                                 <td><?php echo $rowmasterlist['Department']; ?></td>
                                                 <td><?php //echo $rowmasterlist['Received_Date']; ?></td>
                                                 <td>
-                                                    
-                                                   
 
 
 
-                                                  
+
+
+
 
                                                      <!-- Delete -->
                                                     <button class="btn btn-rounded btn-danger"  href="#<?php echo $i;?>" data-toggle="modal" data-target="#<?php echo $i;?>"><i class="fa fa-trash" aria-hidden="true"></i></button>
@@ -143,19 +143,19 @@ include_once("scriptvalidation.php");
                                                     <!-- Edit -->
                                                     <button class="btn btn-rounded btn-warning"  href="#viewrecord<?php echo $i;?>" data-toggle="modal" data-target="#viewrecord<?php echo $i;?>"><i class="fa fa-id-card" aria-hidden="true"></i></button>
 
-                                                  
 
-                                                  
+
+
 
 
                                                 </td>
                                             </tr>
-                                            <?php include('actions/actionpops.php'); include('actions/editrecord.php'); 
-                                            $i++; 
+                                            <?php include('actions/actionpops.php'); //include('actions/editrecord.php'); 
+                                            $i++;
                                         } ?>
                                         </tbody>
                                     </table>
-                             
+
                             </div>
                         </div>
                     </div>
@@ -188,7 +188,7 @@ include_once("scriptvalidation.php");
     <script src="../resources/js/scripts.js"></script>
     <!-- scripit init-->
 
-    
+
     <script src="../resources/js/lib/datatables/datatables.min.js"></script>
     <script src="../resources/js/lib/datatables/datatables-init.js"></script>
 
@@ -206,7 +206,7 @@ include_once("scriptvalidation.php");
                     <div class="modal-header">
                     </div>
                     <div class="modal-body">
-                        
+
                         <div style="text-align:center;"><font size="30px"><span class="fa fa-warning" style="color: red;"><h3>Are You Sure?</h3></span></font></div>
 
                     </div>
@@ -218,5 +218,3 @@ include_once("scriptvalidation.php");
           </div>
         </div>
       </div>
-
-      

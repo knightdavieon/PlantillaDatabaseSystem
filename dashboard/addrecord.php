@@ -127,7 +127,7 @@ include_once("scriptvalidation.php");
                                 <div class="row fieldspace">
                                     <div class="col-md-2 rem-side-pad">
                                         <input class="form-control" type="text" id="datetimepicker2" name="dateofbirth" placeholder="Date of Birth" onkeypress="return restrictCharacters(this, event, dateOnly);" required/>
-                                        
+
                                     </div>
                                     <div class="col-md-3 rem-side-pad">
                                         <input type="text" name="birthplace" class="form-control" placeholder="Place of Birth" onkeypress="return restrictCharacters(this, event, alphanumericunderdot);" required>
@@ -155,28 +155,9 @@ include_once("scriptvalidation.php");
                                             <option value="other">Other/s</option>
                                         </select>
                                     </div>
-                                    <div class="col-md rem-side-pad">
-                                        <input type="text" class="form-control" name="height" placeholder="Height(m)" onkeypress="return restrictCharacters(this, event, heightOnly);" required>
-                                    </div>
-                                    <div class="col-md rem-side-pad">
-                                        <input type="text" class="form-control" name="weight" placeholder="Weight(kg)" onkeypress="return restrictCharacters(this, event, integerOnly);" required>
-                                    </div>
+
                                 </div>
-                                <div class="row fieldspace">
-                                    <div class="col-md-3 rem-side-pad">
-                                        <input type="text" class="form-control" name="blood" placeholder="Blood Type">
-                                    </div>
-                                    <div class="col-md-3 rem-side-pad">
-                                        <input type="text" class="form-control" name="gsis" placeholder="GSIS ID NO">
-                                    </div>
-                                    <div class="col-md-3 rem-side-pad">
-                                        <input type="text" class="form-control" name="pagibig" placeholder="PAG-IBIG NO">
-                                    </div>
-                                    <div class="col-md-3 rem-side-pad">
-                                        <input type="text" class="form-control" name="philhealth" placeholder="PHILHEALTH NO">
-                                    </div>
-                                    
-                                </div>
+
                                 <div class="row fieldspace">
                                     <div class="col-md-4 rem-side-pad">
                                         <input type="text" class="form-control" name="sss" placeholder="SSS">
@@ -233,50 +214,10 @@ include_once("scriptvalidation.php");
                                     </div>
                                 </div>
 
-                                <h4 class="card-title m-t-20">Family Background</h4>
-                                <hr />
 
-                                <div class="row fieldspace">
-                                    <div class="col-md-4 rem-side-pad">
-                                        <input type="text" class="form-control" name="spouselast" placeholder="Spouse's Surname" onkeypress="return restrictCharacters(this, event, alphaOnly);">
-                                    </div>
-                                    <div class="col-md-4 rem-side-pad">
-                                        <input type="text" class="form-control" name="spousefirst" placeholder="Spouse's First Name" onkeypress="return restrictCharacters(this, event, alphaOnly);">
-                                    </div>
-                                    <div class="col-md-1" style="padding-left: 0; padding-right: 0;">
-                                        <input type="text" class="form-control" name="spouseextent" style=" background-color: #ECF4F2;" placeholder="Ex Jr." onkeypress="return restrictCharacters(this, event, alphaOnly);">
-                                    </div>
-                                    <div class="col-md-3 rem-side-pad">
-                                        <input type="text" class="form-control" name="spousemiddle" placeholder="Spouse's Middle Name" onkeypress="return restrictCharacters(this, event, alphaOnly);">
-                                    </div>
 
-                                </div>
-                                <div class="row fieldspace">
-                                    <div class="col-md-6 rem-side-pad">
-                                        <input type="text" class="form-control" name="spouseoccupation" placeholder="Spouse's Occupation" onkeypress="return restrictCharacters(this, event, alphaOnly);">
-                                    </div>
-                                    <div class="col-md-6 rem-side-pad">
-                                        <input type="text" class="form-control" name="spouseemployer" placeholder="Spouse's Employer/Business Name" onkeypress="return restrictCharacters(this, event, alphaOnly);">
-                                    </div>
-                                </div>
-                                <div class="row fieldspace">
-                                    <div class="col-md-6 rem-side-pad">
-                                        <input type="text" class="form-control" name="spousebusinessadd" placeholder="Spouse's Business Address" onkeypress="return restrictCharacters(this, event, alphanumericunderdot);">
-                                    </div>
-                                    <div class="col-md-6 rem-side-pad">
-                                        <input type="text" class="form-control" name="spousetelno" placeholder="Spouse's Telephone Number" onkeypress="return restrictCharacters(this, event, phoneOnly);">
-                                    </div>
-                                </div>
-                                <h6 class=" m-t-15">Child</h6>
-                                <input type="hidden" name="child[]" value=" ">
-                                <input type="hidden" name="birth[]" value=" ">
-                                <div class="appendchild">
 
-                                </div>
-                                <input type="button" class="btn btn-default fieldspace" id="Addchild" Value="Add Child" style=" height: 5%;padding: 0;">
-                                <!--<input type="button" class="btn btn-default fieldspace" id="Clear" Value="Clear" style="width: 10%; height: 5%;padding: 0;">-->
-                                <div class=" m-t-10">
-                                </div>
+
 
                                 <div class="row fieldspace">
                                     <div class="col-md-4 rem-side-pad">
@@ -455,7 +396,7 @@ include_once("scriptvalidation.php");
                                    <input type="hidden" name="dateofrelease[]" value="">
 
                                 <div class="appendeligi">
-                                
+
                                 </div>
                                 <input type="button" class="btn btn-default fieldspace" id="Addeligi" Value="Add Eligibility" style="height: 5%;padding: 0;">
 
@@ -474,259 +415,7 @@ include_once("scriptvalidation.php");
                                 </div>
                                 <input type="button" class="btn btn-default fieldspace" id="Addworkexp" Value="Add Work Experience" style="height: 5%;padding: 0;">
 
-                                <h4 class="card-title m-t-20">Voluntary Work or Involvement in Civic / Non - Government / People / Voluntary Organizations</h4>
-                                <hr />
 
-                                 <input type="hidden" name="organization_add[]" value="">
-                                 <input type="hidden" name="voluntaryfrom[]" value="">
-                                 <input type="hidden" name="voluntaryto[]" value="">
-                                 <input type="hidden" name="numberofhours[]" value="">
-                                 <input type="hidden" name="position[]" value="">
-                                <div class="appendvoluntarywork">
-                                </div>
-                                <input type="button" class="btn btn-default fieldspace" id="Addvoluntarybtn" Value="Add Voluntary Work" style="height: 5%;padding: 0;" >
-
-                                <h4 class="card-title m-t-20">Learning & Development (L&D) Interventions/Traning Programs Attended</h4>
-                                <hr />
-
-                                 <input type="hidden" name="titlelnd[]" value="">
-                                 <input type="hidden" name="lndfrom[]" value="">
-                                 <input type="hidden" name="lndto[]" value="">
-                                 <input type="hidden" name="lndnumberofhours[]" value="">
-                                 <input type="hidden" name="typeoflnd[]" value="">
-                                 <input type="hidden" name="conductedby[]" value="">
-
-                                <div class="appendlnd">
-
-                                </div>
-                                <input type="button" class="btn btn-default fieldspace" id="Addlnd" Value="Add L&D" style="height: 5%;padding: 0;" >
-
-                                <h4 class="card-title m-t-20">Other Information</h4>
-                                <hr />
-                                 <input type="hidden" name="specialskills[]" value="">
-                                 <input type="hidden" name="nonacademicdistinction[]" value="">
-                                 <input type="hidden" name="membership[]" value="">
-                                
-                                <div class="appendother">
-
-                                </div>
-                                <input type="button" class="btn btn-default fieldspace" id="Addother" Value="Add Information" style="height: 5%;padding: 0;" >
-
-                                <hr />
-                                <div class="row fieldspace">
-                                    <div class="col-md-6">
-                                        <font>
-                                        Are you related by consanguinity or affinity to the appointing or recommending authority, or to the chief of bureau or office or to the person who has immediate supervision over you in the Office, Bureau or Department where you will be apppointed,
-                                        </font>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <font>a. within the third degree?</font>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label><input type="checkbox" class="bs-checkbox"style="border-color: rgb(41, 41, 41);color:#424141;" id="36A<?php echo $i; ?>" name="36A" value="checked"> Yes</label>
-                                                <font size="2">(unchecked if no)</font>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <font>b. within the fourth degree (for Local Government Unit - Career Employees)?</font>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label><input type="checkbox" class="bs-checkbox"style="border-color: rgb(41, 41, 41);color:#424141;" id="36B<?php echo $i; ?>" name="36B" value="checked"> Yes</label>
-                                                <font size="2">(unchecked if no)</font>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <input type="text" class="form-control" name=" " placeholder="If yes, give details">
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr />
-                                <div class="row fieldspace">
-                                    <div class="col-md-6 rem-side-pad">
-                                        <font>
-                                        a. Have you ever been found guilty of any administrative offense?
-                                    </font>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label><input type="checkbox" class="bs-checkbox"style="border-color: rgb(41, 41, 41);color:#424141;" id="36B<?php echo $i; ?>" name="36B" value="checked"> Yes</label>
-                                        <font size="2">(unchecked if no)</font>
-                                        <div class="row">
-                                            <input type="text" class="form-control" name=" " placeholder="If yes, give details">
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <hr />
-                                <div class="row fieldspace">
-                                    <div class="col-md-6 rem-side-pad">
-                                        <font>
-                                        b. Have you been criminally charged before any court?
-                                    </font>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label><input type="checkbox" class="bs-checkbox"style="border-color: rgb(41, 41, 41);color:#424141;" id="chckbox<?php echo $i; ?>" name="chckbox" value="checked"> Yes</label>
-                                        <font size="2">(unchecked if no)</font>
-                                        <div class="row">
-                                            <div class="col-md-6 rem-side-pad">
-                                                <input type="text" class="form-control" name=" " placeholder="Date Filed">
-                                            </div>
-                                            <div class="col-md-6 rem-side-pad">
-                                                <input type="text" class="form-control" name=" " placeholder="Status of Case/s">
-                                            </div>
-                                        </div>
-                                     </div>
-                                </div>
-                                
-                                <hr />
-                                <div class="row fieldspace">
-                                    <div class="col-md-6 rem-side-pad">
-                                        <font>
-                                        Have you ever been convicted of any crime or violation of any law, decree, ordinance or regulation by any court or tribunal?
-                                    </font>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label><input type="checkbox" class="bs-checkbox"style="border-color: rgb(41, 41, 41);color:#424141;" id="chckbox<?php echo $i; ?>" name="chckbox" value="checked"> Yes</label>
-                                        <font size="2">(unchecked if no)</font>
-                                        <div class="row">
-                                            <input type="text" class="form-control" name=" " placeholder="If yes, give details">
-                                        </div>
-                                     </div>
-                                </div>
-
-                                <hr />
-                                <div class="row fieldspace">
-                                    <div class="col-md-6 rem-side-pad">
-                                        <font>
-                                        Have you ever been separated from the service in any of the following modes: resignation, retirement, dropped from the rolls, dismissal, termination, end of term, finished contract or phased out (abolition) in the public or private sector?
-                                    </font>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label><input type="checkbox" class="bs-checkbox"style="border-color: rgb(41, 41, 41);color:#424141;" id="chckbox<?php echo $i; ?>" name="chckbox" value="checked"> Yes</label>
-                                        <font size="2">(unchecked if no)</font>
-                                        <div class="row">
-                                            <input type="text" class="form-control" name=" " placeholder="If yes, give details">
-                                        </div>
-                                     </div>
-                                </div>
-
-                                <hr />
-                                <div class="row fieldspace">
-                                    <div class="col-md-6 rem-side-pad">
-                                        <font>
-                                        a. Have you ever been a candidate in a national or local election held within the last year (except Barangay election)?
-                                    </font>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label><input type="checkbox" class="bs-checkbox"style="border-color: rgb(41, 41, 41);color:#424141;" id="chckbox<?php echo $i; ?>" name="chckbox" value="checked"> Yes</label>
-                                        <font size="2">(unchecked if no)</font>
-                                        <div class="row">
-                                            <input type="text" class="form-control" name=" " placeholder="If yes, give details">
-                                        </div>
-                                     </div>
-                                </div>
-                                <div class="row fieldspace">
-                                    <div class="col-md-6 rem-side-pad">
-                                        <font>
-                                        b. Have you resigned from the government service during the three (3)-month period before the last election to promote/actively campaign for a national or local candidate?
-                                    </font>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label><input type="checkbox" class="bs-checkbox"style="border-color: rgb(41, 41, 41);color:#424141;" id="chckbox<?php echo $i; ?>" name="chckbox" value="checked"> Yes</label>
-                                        <font size="2">(unchecked if no)</font>
-                                        <div class="row">
-                                            <input type="text" class="form-control" name=" " placeholder="If yes, give details">
-                                        </div>
-                                     </div>
-                                </div>
-
-                                <hr />
-                                <div class="row fieldspace">
-                                    <div class="col-md-6 rem-side-pad">
-                                        <font>
-                                        Have you acquired the status of an immigrant or permanent resident of another country?
-                                    </font>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label><input type="checkbox" class="bs-checkbox"style="border-color: rgb(41, 41, 41);color:#424141;" id="chckbox<?php echo $i; ?>" name="chckbox" value="checked"> Yes</label>
-                                        <font size="2">(unchecked if no)</font>
-                                        <div class="row">
-                                            <input type="text" class="form-control" name=" " placeholder="If yes, give details(country)">
-                                        </div>
-                                     </div>
-                                </div>
-
-                                <hr />
-                                <div class="row fieldspace">
-                                    <div class="col-md-6 rem-side-pad">
-                                        <font>
-                                        Pursuant to: (a) Indigenous People's Act (RA 8371); (b) Magna Carta for Disabled Persons (RA 7277); and (c) Solo Parents Welfare Act of 2000 (RA 8972), please answer the following items:
-
-                                    </font>
-                                    </div>
-                                    <div class="col-md-6">
-
-                                     </div>
-                                </div>
-                                <div class="row fieldspace">
-                                    <div class="col-md-6 rem-side-pad">
-                                        <font>
-                                        a. Are you a member of any indigenous group?
-                                    </font>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label><input type="checkbox" class="bs-checkbox"style="border-color: rgb(41, 41, 41);color:#424141;" id="chckbox<?php echo $i; ?>" name="chckbox" value="checked"> Yes</label>
-                                        <font size="2">(unchecked if no)</font>
-                                        <div class="row">
-                                            <input type="text" class="form-control" name=" " placeholder="If yes, please specify)">
-                                        </div>
-                                     </div>
-                                </div>
-                                <div class="row fieldspace">
-                                    <div class="col-md-6 rem-side-pad">
-                                        <font>
-                                        b. Are you a person with disability?
-                                    </font>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label><input type="checkbox" class="bs-checkbox"style="border-color: rgb(41, 41, 41);color:#424141;" id="chckbox<?php echo $i; ?>" name="chckbox" value="checked"> Yes</label>
-                                        <font size="2">(unchecked if no)</font>
-                                        <div class="row">
-                                            <input type="text" class="form-control" name=" " placeholder="If yes, please specify)">
-                                        </div>
-                                     </div>
-                                </div>
-                                <div class="row fieldspace">
-                                    <div class="col-md-6 rem-side-pad">
-                                        <font>
-                                        c. Are you a solo parent?
-                                    </font>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label><input type="checkbox" class="bs-checkbox"style="border-color: rgb(41, 41, 41);color:#424141;" id="chckbox<?php echo $i; ?>" name="chckbox" value="checked"> Yes</label>
-                                        <font size="2">(unchecked if no)</font>
-                                        <div class="row">
-                                            <input type="text" class="form-control" name=" " placeholder="If yes, please specify)">
-                                        </div>
-                                     </div>
-                                </div>
-
-                                <h4 class="card-title m-t-20">Character References</h4>
-                                <hr />
-
-                                <input type="hidden" name="referencename[]" value="">
-                                <input type="hidden" name="referenceaddress[]" value="">
-                                <input type="hidden" name="referencetelno[]" value="">
-                                <div class="appendreference">
-
-                                </div>
-                                <input type="button" class="btn btn-default fieldspace" id="Addreference" Value="Add Reference" style="height: 5%;padding: 0;" >
-
-                                <!--End Personal Information-->
-                            </div>
                             <hr />
                             <div class="container">
                             <div class="container text-right">
@@ -751,7 +440,7 @@ include_once("scriptvalidation.php");
     <!-- End Wrapper -->
     <!-- All Jquery -->
     <script src="../resources/dist/js/jquery-3.3.1.min.js"></script>
-    
+
     <!-- Bootstrap tether Core JavaScript -->
     <script src="../resources/js/lib/bootstrap/js/popper.min.js"></script>
     <script src="../resources/js/lib/bootstrap/js/bootstrap.min.js"></script>
@@ -768,13 +457,13 @@ include_once("scriptvalidation.php");
     <script src="../resources/js/scripts.js"></script>
     <!-- scripit init-->
 
-    
+
     <script src="../resources/js/lib/datatables/datatables.min.js"></script>
     <script src="../resources/js/lib/datatables/datatables-init.js"></script>
 
     <!-- form validation -->
     <script type="text/javascript">
-        
+
     </script>
     <script>
     $('#datetimepicker2').datetimepicker({
@@ -891,24 +580,8 @@ include_once("scriptvalidation.php");
 
     });
 
-   
-    //append child
-    //names = child birth
-    var childcount = 1;
-    $('#Addchild').click(function(){
-       $(".appendchild").append("<div class='row fieldspace appended"+childcount+"'><div class='col-md-8 rem-side-pad'><input type='text' class='form-control' name='child[]' placeholder='Child Full Name ' onkeypress='return restrictCharacters(this, event, alphaOnly);'></div><div class='col-md-3 rem-side-pad'><input type='text' class='form-control' name='birth[]' placeholder='Date of Birth (dd/mm/yyyy)'></div><div class='col-md-1 remsidepad'><input type='button' class='btn btn-danger btn-remove-child' name='remove' id='"+childcount+"' value='X'></div></div>");
-       childcount++;
-    });
-    $(document).on('click', '.btn-remove-child',function(){
-        var button_id = $(this).attr('id');
-        $(".appended"+button_id+"").remove();
-    });
-    $('#Clear').click(function(){
-        
-       $(".appended").remove();
-       childcount = 1;
-    });
-    //end append child
+
+
 
     //append eligibility
     //names = career rating dateofexamination placeofexamination number dateofrelease
@@ -937,54 +610,7 @@ include_once("scriptvalidation.php");
 
     //end append eligibility
 
-    //voluntary work
-    //append names organization_add voluntaryfrom voluntaryto numberofhours position
-    var volunteercount = 1;
-    $('#Addvoluntarybtn').click(function(){
-       $(".appendvoluntarywork").append('<div class="appendedvoluntary'+volunteercount+'"><div class="row fieldspace"><div class="col-md-8 rem-side-pad"><input type="text" class="form-control" name="organization_add[]" placeholder="Name & Address of Organizations"></div><div class="col-md-2 rem-side-pad"><input type="text" class="form-control" name="voluntaryfrom[]" placeholder="From (dd/mm/yyyy)"></div><div class="col-md-2 rem-side-pad"><input type="text" class="form-control" name="voluntaryto[]" placeholder="To (dd/mm/yyyy)"></div></div><div class="row fieldspace"><div class="col-md-2 rem-side-pad"><input type="text" class="form-control" name="numberofhours[]" placeholder="Number of Hours"></div><div class="col-md-9 rem-side-pad"><input type="text" class="form-control" name="position[]" placeholder="Position / Nature of Work"></div><div class="col-md-1 rem-side-pad"><input type="button" class="btn btn-danger btn-remove-volunteer" name="remove" id="'+volunteercount+'" value="X"></div></div></div>');
-       volunteercount++;
-    });
-    $(document).on('click', '.btn-remove-volunteer',function(){
-        var volunteer_button_id = $(this).attr('id');
-        $(".appendedvoluntary"+volunteer_button_id+"").remove();
-    });
-    //Learning and development training programs
-    // append names titlelnd lndfrom lndto lndnumberofhours typeoflnd conductedby
-    var lndcount = 1;
-    $('#Addlnd').click(function(){
-       $(".appendlnd").append('<div class="appendedlnd'+lndcount+'"><div class="row fieldspace"><div class="col-md-8 rem-side-pad"><input type="text" class="form-control" name="titlelnd[]" placeholder="Learning and Development (L&D) Interventions/Traning Programs"></div><div class="col-md-2 rem-side-pad"><input type="text" class="form-control" name="lndfrom[]" placeholder="From (dd/mm/yyyy)"></div><div class="col-md-2 rem-side-pad"><input type="text" class="form-control" name="lndto[]" placeholder="To (dd/mm/yyyy)"></div></div><div class="row fieldspace"><div class="col-md-2 rem-side-pad"><input type="text" class="form-control" name="lndnumberofhours[]" placeholder="Number of Hours"></div><div class="col-md-5 rem-side-pad"><input type="text" class="form-control" name="typeoflnd[]" placeholder="Type of LD ( Managerial/Supervisory/Technical/etc)"></div><div class="col-md-4 rem-side-pad"><input type="text" class="form-control" name="conductedby[]" placeholder="Conducted/Sponsored by"></div><div class="col-md rem-side-pad"><input type="button" class="btn btn-danger btn-remove-lnd" name="remove" id="'+lndcount+'" value="X"></div></div></div>');
-       lndcount++;
-    });
-    $(document).on('click', '.btn-remove-lnd',function(){
-        var lnd_button_id = $(this).attr('id');
-        $(".appendedlnd"+lnd_button_id+"").remove();
-    });
-
-    //other information
-    //append names specialskills nonacademicdistinction membership
-
-    var othercount = 1;
-    $('#Addother').click(function(){
-       $(".appendother").append('<div class="appendedother'+othercount+'"><div class="row fieldspace"><div class="col-md-4 rem-side-pad"><input type="text" class="form-control" name="specialskills[]" placeholder="Special Skills and Hobbies"></div><div class="col-md-4 rem-side-pad"><input type="text" class="form-control" name="nonacademicdistinction[]" placeholder="Non-Academic Distinctions / Recognition"></div><div class="col-md-3 rem-side-pad"><input type="text" class="form-control" name="membership[]" placeholder="Membership in Association/Organization"></div><div class="col-md-1 rem-side-pad"><input type="button" class="btn btn-danger btn-remove-other" name="remove" id="'+othercount+'" value="X"></div></div></div>');
-       othercount++;
-    });
-    $(document).on('click', '.btn-remove-other',function(){
-        var other_button_id = $(this).attr('id');
-        $(".appendedother"+other_button_id+"").remove();
-    });
-
-    //reference
-    //append names
-
-    var referencecount = 1;
-    $('#Addreference').click(function(){
-       $(".appendreference").append('<div class="appendedreference'+referencecount+'"><div class="row fieldspace"><div class="col-md-5 rem-side-pad"><input type="text" class="form-control" name="referencename[]" placeholder="Name"></div><div class="col-md-3 rem-side-pad"><input type="text" class="form-control" name="referenceaddress[]" placeholder="Address"></div><div class="col-md-3 rem-side-pad"><input type="text" class="form-control" name="referencetelno[]" placeholder="Tel no."></div><div class="col-md-1 rem-side-pad"><input type="button" class="btn btn-danger btn-remove-reference" name="remove" id="'+referencecount+'" value="X"></div></div></div>');
-       referencecount++;
-    });
-    $(document).on('click', '.btn-remove-reference',function(){
-        var reference_button_id = $(this).attr('id');
-        $(".appendedreference"+reference_button_id+"").remove();
-    });
+    
     </script>
 
 
@@ -998,7 +624,7 @@ include_once("scriptvalidation.php");
                 <div class="modal-header">
                 </div>
                 <div class="modal-body">
-                        
+
                     <div style="text-align:center;"><font size="30px"><span class="fa fa-warning" style="color: red;"><h3>Are You Sure?</h3></span></font></div>
 
                 </div>
@@ -1010,5 +636,3 @@ include_once("scriptvalidation.php");
         </div>
     </div>
 </div>
-
-      

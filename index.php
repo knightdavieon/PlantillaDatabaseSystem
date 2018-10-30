@@ -57,7 +57,7 @@ if(!empty($_POST)){
     <span aria-hidden='true'>&times;</span>
   </button></div>";
             }
-            
+
         }else{
             $_SESSION['loginNotifications'] = "<div class='alert alert-danger' role='alert'><strong>ERROR!</strong> Account name or password doesnt match!<button type='button' class='close' data-dismiss='alert' aria-label='Close'>
     <span aria-hidden='true'>&times;</span>
@@ -96,9 +96,10 @@ if(!empty($_POST)){
     display: block;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
     }
     .headertextcolor{
-        color: #1E6B57; 
+        color: #1E6B57;
     }
     .cardbodycolor{
         background-color: #f4f4f4;
@@ -112,8 +113,8 @@ if(!empty($_POST)){
         color: white;
     }
 
-    
-    
+
+
     </style>
 </head>
 <body>
@@ -129,7 +130,7 @@ if(!empty($_POST)){
                                 <img class="center" style="width: 50%; height: 50%;" src="resources/photos/LALAWIGAN NG ZAMBALES.png">
                             </div>
                             <div class="row">
-                                <medium class="center headertextcolor">Plantilla Database System</medium>
+                                <div class="col-md-3"><hr /></div><div class="col-md-6"<medium class="center headertextcolor">Plantilla Database System</medium></div><div class="col-md-3"><hr /></div>
                             </div>
                         </div>
                         <hr />
@@ -147,7 +148,7 @@ if(!empty($_POST)){
                                 <label class="" for="pas">Password:</label>
                                 <input type="password" style="text-align: center;" class="form-control cardbodycolor" id="pas" name="accountpassword" placeholder="Enter Password">
                             </div>
-                        
+
                         </div>
                         <br />
                         <hr />
