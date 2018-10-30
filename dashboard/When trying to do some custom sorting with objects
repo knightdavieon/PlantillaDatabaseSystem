@@ -1,0 +1,52 @@
+When trying to do some custom sorting with objects and an anonymous function it wasn't entirely clear how this usort function works. I think it probably uses a quicksort in the background. Basically it actually moves the $b variable up or down in respect to the $a variable. It does NOT move the $a variable inside the callback function. This is key to getting your logic right in the comparisons.
+
+If you return -1 that moves the $b variable down the array, return 1 moves $b up the array and return 0 keeps $b in the same place. 
+
+To test I cut down my code to sorting a simple array from highest priority to lowest.
+
+<?php
+$priorities = array(5, 8, 3, 7, 3);
+
+usort($priorities, function($a, $b)
+{
+    if ($a == $b)
+    {
+        echo "a ($a) is same priority as b ($b), keeping the same\n";
+        return 0;
+    }
+    else if ($a > $b)
+    {
+        echo "a ($a) is higher priority than b ($b), moving b down array\n";
+        return -1;
+    }
+    else {
+        echo "b ($b) is higher priority than a ($a), moving b up array\n";                
+        return 1;
+    }
+});
+
+echo "Sorted priorities:\n";
+var_dump($priorities);
+?>
+
+Output:
+
+b (8) is higher priority than a (3), moving b up array
+b (5) is higher priority than a (3), moving b up array
+b (7) is higher priority than a (3), moving b up array
+a (3) is same priority as b (3), keeping the same
+a (8) is higher priority than b (3), moving b down array
+b (8) is higher priority than a (7), moving b up array
+b (8) is higher priority than a (5), moving b up array
+b (8) is higher priority than a (3), moving b up array
+a (5) is higher priority than b (3), moving b down array
+a (7) is higher priority than b (5), moving b down array
+
+Sorted priorities:
+array(5) {
+  [0]=> int(8)
+  [1]=> int(7)
+  [2]=> int(5)
+  [3]=> int(3)
+  [4]=> int(3)
+}
