@@ -9,12 +9,8 @@
                          <li class="nav-label">RECORDS</li>
                          <li> <a href="masterlist" aria-expanded="false"><i class="fa fa-list"></i><span class="hide-menu">Master List </span></a></li>
 
-                         <li style="padding-left: 10%;"> <a href="permanent" aria-expanded="false"><i class="fa fa-list"></i><span class="hide-menu">Permanent </span></a></li>
-                         <li style="padding-left: 10%;"> <a href="#" aria-expanded="false"><i class="fa fa-list"></i><span class="hide-menu">Casual </span></a></li>
-                         <li style="padding-left: 10%;"> <a href="#" aria-expanded="false"><i class="fa fa-list"></i><span class="hide-menu">Contractual </span></a></li>
-                         <li style="padding-left: 10%;"> <a href="#" aria-expanded="false"><i class="fa fa-list"></i><span class="hide-menu">Consultant </span></a></li>
-                         <li style="padding-left: 10%;"> <a href="joborder" aria-expanded="false"><i class="fa fa-list"></i><span class="hide-menu">Job Order </span></a></li>
-                         
+                      
+
                         <li class="nav-devider"></li>
                         <li class="nav-label">Settings</li>
                          <li> <a href="accounts" aria-expanded="false"><i class="fa fa-users"></i><span class="hide-menu">Accounts </span></a></li>
@@ -24,4 +20,4 @@
                 <!-- End Sidebar navigation -->
             </div>
             <!-- End Sidebar scroll-->
-        </div>  
+        </div>
