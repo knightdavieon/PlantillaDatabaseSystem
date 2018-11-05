@@ -157,18 +157,6 @@ include_once("scriptvalidation.php");
                                     </div>
 
                                 </div>
-
-                                <div class="row fieldspace">
-                                    <div class="col-md-4 rem-side-pad">
-                                        <input type="text" class="form-control" name="sss" placeholder="SSS">
-                                    </div>
-                                    <div class="col-md-4 rem-side-pad">
-                                        <input type="text" class="form-control" name="tin" placeholder="TIN">
-                                    </div>
-                                    <div class="col-md-4 rem-side-pad">
-                                        <input type="text" class="form-control" name="aen" placeholder="AGENCY EMPLOYEE NO">
-                                    </div>
-                                </div>
                                 <div class="row fieldspace">
                                     <div class="col-md-3 rem-side-pad">
                                         <select name="citizenship" class="form-control" required>
@@ -610,7 +598,7 @@ include_once("scriptvalidation.php");
 
     //end append eligibility
 
-    
+
     </script>
 
 
